@@ -5,7 +5,7 @@ const Banner = () => {
     return (
         <div className='flex gap-4 py-24'>
             <div className='w-1/2 h-55'>
-                <div className="hero h-55 bg-linear-to-r from-[#632EE3] to-[#9F62F2] rounded-xl "
+                <div className="hero h-55 rounded-xl "
                     style={{
                         backgroundImage: `
                             url(${victor1}),
@@ -26,7 +26,7 @@ const Banner = () => {
                 </div>
             </div>
             <div className='w-1/2 h-55'>
-                <div className="hero h-55 bg-linear-to-r from-[#54CF68] to-[#54CF68]  rounded-xl"
+                <div className="hero h-55 rounded-xl"
                     style={{
                         backgroundImage: `
                             url(${victor1}),

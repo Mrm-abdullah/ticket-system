@@ -14,25 +14,22 @@ This project is a React-based **Customer Support Zone** designed to display cust
 ## 📌 Features & Requirements 
 
 ### ✅ Navbar 
-    === done
 
+* Website name/logo on the **left**. ====done
+* Menu items and **New Ticket** button on the **right**.  ====done
 
 ### ✅ Banner
 
-* Banner section designed according to Figma.
-* Shows a **linear gradient** background.
+* Banner section designed according to Figma.  ====done
+* Shows a **linear gradient** background.  ====done
 * Displays ticket statistics:
 
-  * **In Progress Count**
+  * **In Progress Count**   
   * **Resolved Count** (default = 0).
 
 ### ✅ Main Section
 
-1. **JSON Data **
-
-   * Created **10–15 tickets** with the following properties:
-
-     * `id`, `title`, `description`, `customer`, `priority`, `status`, `createdAt`.
+1. **JSON Data **  ==== done
 
 2. **Ticket Cards**
 
