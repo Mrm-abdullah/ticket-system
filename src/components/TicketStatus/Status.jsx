@@ -5,7 +5,7 @@ const Status = () => {
         <>
             <div>
                     <h3 className='text-xl font-bold pb-2'>Task Status</h3>
-                    <p className='text-gray-600'>Select a ticket to add to Task Status</p>
+                    <p className='text-[#627382]'>Select a ticket to add to Task Status</p>
 
                     <div className="w-full bg-base-100 my-4 rounded">
                         <div className="card-body">
@@ -28,7 +28,7 @@ const Status = () => {
                 </div>
                 <div className='py-8'>
                     <h3 className='text-xl font-bold pb-2'>Resolved Task</h3>
-                    <p className='text-gray-600'>No resolved tasks yet.</p>
+                    <p className='text-[#627382]'>No resolved tasks yet.</p>
 
                     <p className='bg-[#E0E7FF] p-4 my-4  w-full rounded'>Smalldf dffd f gdfgdgg d </p>
                 </div>
