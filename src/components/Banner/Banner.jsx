@@ -3,8 +3,8 @@ import victor1 from '../../assets/vector1.png'
 import victor3 from '../../assets/vector3.png'
 const Banner = () => {
     return (
-        <div className='flex gap-4 py-24'>
-            <div className='w-1/2 h-55'>
+        <div className='flex flex-col md:flex-row gap-4 py-8 lg:py-24 p-2'>
+            <div className='w-full md:w-1/2 h-55'>
                 <div className="hero h-55 rounded-xl "
                     style={{
                         backgroundImage: `
@@ -25,7 +25,7 @@ const Banner = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-1/2 h-55'>
+            <div className='w-full md:w-1/2 h-55'>
                 <div className="hero h-55 rounded-xl"
                     style={{
                         backgroundImage: `

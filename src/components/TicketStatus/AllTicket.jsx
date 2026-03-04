@@ -2,7 +2,7 @@ import React from 'react';
 
 const AllTicket = () => {
     return (
-        <div className='py-4 grid grid-cols-2 gap-4'>
+        <div className='py-4 grid grid-cols-1 lg:grid-cols-2 gap-4'>
             <div className="card bg-base-100">
                 <div className="card-body">
                     <div className='flex justify-between'>

@@ -49,9 +49,8 @@ This project is a React-based **Customer Support Zone** designed to display cust
      
 
 
-### ✅ Footer 
-
-* Designed according to Figma.
+### ✅ Footer
+    ==== done
 
 ### ✅ Responsiveness 
 
