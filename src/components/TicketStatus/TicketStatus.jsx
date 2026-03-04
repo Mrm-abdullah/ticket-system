@@ -6,31 +6,48 @@ import { toast } from 'react-toastify';
 const TicketStatus = ({ticketPromise, setInProgress, inProgress, resolved, setResolved}) => {
 
     const ticketPromiseData = use(ticketPromise)
-    // console.log(ticketPromiseData)
+    const [ticketData, setTicketData] = useState([...ticketPromiseData])
 
     const [tasks, setTasks] = useState([])
-
     const handleTask = (ticket) => {
         // console.log(ticket)
         setTasks([...tasks, ticket])
-        const Progress = inProgress + 1
-        setInProgress(Progress)
+        const newInProgress = inProgress + 1
+        setInProgress(newInProgress)
         toast("Task added")
-        
     }
-    console.log(tasks)
+    const [resolvedTask, setResolvedTask] = useState([])
+    const handleResolvedTask = (reTask) => {
+        const newResolved = resolved + 1
+        setResolved(newResolved)
+
+        const newInProgress = inProgress - 1
+        setInProgress(newInProgress)
+
+        const newTask = tasks.filter(task => task.id != reTask.id)
+        setTasks(newTask)
+
+        const newResolvedTask = [...resolvedTask,reTask]
+        setResolvedTask(newResolvedTask)
+
+        const newTicketData = ticketData.filter(ticketData => ticketData.id != reTask.id)
+        setTicketData(newTicketData)
+        toast("Item Resolved")        
+
+    }
+    // console.log(tasks)
     return (
         <div className=' grid md:grid-cols-5 lg:grid-cols-4 pb-8 gap-8 p-2'>
             <div className='order-2 md:order-1 col-span-1 md:col-span-3'>
                 <h3 className='text-xl font-bold'>Customer Tickets</h3>
                 <div className='py-4 grid grid-cols-1 lg:grid-cols-2 gap-4'>
                     {
-                        ticketPromiseData.map((ticket) => <AllTicket handleTask={handleTask} ticket={ticket} key={ticket.id}></AllTicket>)
+                        ticketData.map((ticket) => <AllTicket handleTask={handleTask} ticket={ticket} key={ticket.id}></AllTicket>)
                     }
                 </div>
             </div>
             <div className='order-1 md:order-2 md:col-span-2 lg:col-span-1'>
-                <Status tasks={tasks} resolved={resolved} setResolved={setResolved}></Status>
+                <Status tasks={tasks} setTasks={setTasks} resolved={resolved} setResolved={setResolved}  inProgress={inProgress} setInProgress={setInProgress} resolvedTask={resolvedTask} handleResolvedTask={handleResolvedTask}></Status>
             </div>
         </div>
     );

@@ -1,23 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Task from './Task';
+import Resolved from './Resolved';
 
-const Status = ({tasks, resolved, setResolved}) => {
+const Status = ({tasks, resolvedTask, handleResolvedTask}) => {
     // console.log(tasks)
+    
     return (
         <>
             <div>
                     <h3 className='text-xl font-bold pb-2'>Task Status</h3>
                     {
-                        tasks.length > 0  ? tasks.map((task) => <Task task={task} key={task.id}></Task>)
+                        tasks.length > 0  ? tasks.map((task) => <Task task={task} key={task.id} handleResolvedTask={handleResolvedTask}></Task>)
                         : <p className='text-[#627382]'>Select a ticket to add to Task Status</p>
                     }
                     
                 </div>
                 <div className='py-8'>
                     <h3 className='text-xl font-bold pb-2'>Resolved Task</h3>
-                    <p className='text-[#627382]'>No resolved tasks yet.</p>
-
-                    <p className='bg-[#E0E7FF] p-4 my-4  w-full rounded'>Smalldf dffd f gdfgdgg d </p>
+                    {
+                        resolvedTask.length > 0 ? resolvedTask.map((resolved) => <Resolved key={resolved.id} resolved={resolved}></Resolved>)
+                        : <p className='text-[#627382]'>No resolved tasks yet.</p>
+                    }
                 </div>
         </>
     );
