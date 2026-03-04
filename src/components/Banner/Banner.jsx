@@ -1,6 +1,6 @@
 import React from 'react';
-import victor1 from '../../../assets/vector1.png'
-import victor3 from '../../../assets/vector3.png'
+import victor1 from '../../assets/vector1.png'
+import victor3 from '../../assets/vector3.png'
 const Banner = () => {
     return (
         <div className='flex gap-4 py-24'>

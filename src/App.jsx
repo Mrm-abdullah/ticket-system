@@ -1,5 +1,6 @@
 import './App.css'
-import Banner from './components/Navbar/Banner/Banner'
+import Banner from './components/Banner/Banner'
+import Footer from './components/Footer/Footer'
 import Navbar from './components/Navbar/Navbar'
 import TicketStatus from './components/TicketStatus/TicketStatus'
 
@@ -16,6 +17,7 @@ function App() {
           <TicketStatus></TicketStatus>
         </div>
       </main>
+      <Footer></Footer>
     </>
   )
 }

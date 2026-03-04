@@ -27,7 +27,7 @@ const Navbar = () => {
                             
                         </ul>
                     </div>
-                    <a className="text-2xl font-bold ">CS — Ticket System</a>
+                    <a className="text-2xl font-bold ">Support Ticket Management</a>
                 </div>
                 
                 <div className="hidden lg:flex">
