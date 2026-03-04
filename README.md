@@ -14,9 +14,8 @@ This project is a React-based **Customer Support Zone** designed to display cust
 ## 📌 Features & Requirements 
 
 ### ✅ Navbar 
+    === done
 
-* Website name/logo on the **left**.
-* Menu items and **New Ticket** button on the **right**.
 
 ### ✅ Banner
 
