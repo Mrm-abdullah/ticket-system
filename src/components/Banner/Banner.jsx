@@ -1,7 +1,7 @@
 import React from 'react';
 import victor1 from '../../assets/vector1.png'
 import victor3 from '../../assets/vector3.png'
-const Banner = () => {
+const Banner = ({inProgress,resolved}) => {
     return (
         <div className='flex flex-col md:flex-row gap-4 py-8 lg:py-24 p-2'>
             <div className='w-full md:w-1/2 h-55'>
@@ -20,7 +20,7 @@ const Banner = () => {
                     <div className="hero-content text-neutral-content text-center">
                         <div className="text-2xl">
                             <p>In-Progress</p>
-                            <p className='text-5xl'>0</p>
+                            <p className='text-5xl'>{inProgress} </p>
                         </div>
                     </div>
                 </div>
@@ -41,7 +41,7 @@ const Banner = () => {
                     <div className="hero-content text-neutral-content text-center">
                         <div className="text-2xl">
                             <p>Resolved</p>
-                            <p className='text-5xl'>0</p>
+                            <p className='text-5xl'> {resolved} </p>
                         </div>
                     </div>
                 </div>

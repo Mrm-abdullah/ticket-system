@@ -1,30 +1,17 @@
 import React from 'react';
+import Task from './Task';
 
-const Status = () => {
+const Status = ({tasks, resolved, setResolved}) => {
+    // console.log(tasks)
     return (
         <>
             <div>
                     <h3 className='text-xl font-bold pb-2'>Task Status</h3>
-                    <p className='text-[#627382]'>Select a ticket to add to Task Status</p>
-
-                    <div className="w-full bg-base-100 my-4 rounded">
-                        <div className="card-body">
-                            <h2 className="card-title">Smalldf dffd f gdfgdgg dg Card</h2>
-                            
-                            <div className="">
-                            <button className="btn bg-[#02A53B] w-full">Complete</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="w-full bg-base-100 my-4 rounded">
-                        <div className="card-body">
-                            <h2 className="card-title">Smalldf dffd f gdfgdgg dg Card</h2>
-                            
-                            <div className="">
-                            <button className="btn bg-[#02A53B] w-full">Complete</button>
-                            </div>
-                        </div>
-                    </div>
+                    {
+                        tasks.length > 0  ? tasks.map((task) => <Task task={task} key={task.id}></Task>)
+                        : <p className='text-[#627382]'>Select a ticket to add to Task Status</p>
+                    }
+                    
                 </div>
                 <div className='py-8'>
                     <h3 className='text-xl font-bold pb-2'>Resolved Task</h3>

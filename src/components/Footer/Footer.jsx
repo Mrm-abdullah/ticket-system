@@ -28,10 +28,10 @@ const Footer = () => {
                 </nav>
                 <nav className='flex flex-col gap-4'>
                     <h6 className="text-white text-2xl">Services </h6>
-                    <a className="link link-hover"><i class="fa-brands fa-square-x-twitter"></i> @SupportTM</a> 
-                    <a className="link link-hover"><i class="fa-brands fa-invision"></i> @SupportTM</a>
-                    <a className="link link-hover"><i class="fa-brands fa-square-facebook"></i> @SupportTM</a>
-                    <a className="link link-hover"><i class="fa-solid fa-envelope"></i>  Support@stm.com</a>
+                    <a className="link link-hover"><i className="fa-brands fa-square-x-twitter"></i> @SupportTM</a> 
+                    <a className="link link-hover"><i className="fa-brands fa-invision"></i> @SupportTM</a>
+                    <a className="link link-hover"><i className="fa-brands fa-square-facebook"></i> @SupportTM</a>
+                    <a className="link link-hover"><i className="fa-solid fa-envelope"></i>  Support@stm.com</a>
                 </nav>
             </div>
             <hr />

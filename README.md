@@ -1,22 +1,13 @@
 
-## WELCOME - ( সহজ সরল সিম্পল ) ASSIGNMENT-02 start Alhamdulillah
-
-
----
-
+## WELCOME - ( সহজ সরল সিম্পল ) ASSIGNMENT-02 design done Alhamdulillah
 
 # Customer Support Zone
-
 This project is a React-based **Customer Support Zone** designed to display customer tickets, track progress, and mark them as resolved. It follows a Figma design and includes additional features like status management, responsiveness, and toast notifications using **React-Toastify**.
-
----
 
 ## 📌 Features & Requirements 
 
 ### ✅ Navbar 
-
-* Website name/logo on the **left**. ====done
-* Menu items and **New Ticket** button on the **right**.  ====done
+    ====done
 
 ### ✅ Banner
 
@@ -29,12 +20,10 @@ This project is a React-based **Customer Support Zone** designed to display cust
 
 ### ✅ Main Section
 
-1. **JSON Data **  ==== done
+1. **JSON Data**  ==== done
 
 2. **Ticket Cards**
-
-   * Display all ticket information in a **card layout**.
-   * Cards arranged in a **2-column grid** (left side).
+    ==== done
 
 3. **Task Status Section**
 
@@ -53,8 +42,7 @@ This project is a React-based **Customer Support Zone** designed to display cust
     ==== done
 
 ### ✅ Responsiveness 
-
-* The entire website is **responsive** for mobile devices.
+    ==== done
 
 ### ✅ Readme: 
 Create a README file to answer the following question-
@@ -88,26 +76,15 @@ Clicking **Complete Button**:
 
 
 ## 🧰 Required Technology Stack
-
-- **HTML**
-- **CSS** (Vanilla / Tailwind / DaisyUI)
-- **JavaScript**
-- **React.js** (Mandatory)
-
-> ⚠️ **Important:** The project must be built using **React.js**. Other frameworks such as Vue are not permitted.
-
----
+     ==== done
 
 ## 📌 Project Rules
-
-- ✅ At least **5 meaningful commits** are required.
-- ❌ Do not use dummy text where real data can be displayed.
-
+    ==== done
 ---
 
 ## 🔗 Submission
 - **Live Link :** YOUR_DEPLOYED_URL_HERE
-- **GitHub Repository:** YOUR_REPO_URL_HERE
+- GitHub Repository: https://github.com/Mrm-abdullah/ticket-system
 
 
 ### 📅 Deadline For 60 marks: 5th March, 2026 (11:59 pm ⏱️)
