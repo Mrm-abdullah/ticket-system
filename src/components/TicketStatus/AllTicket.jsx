@@ -11,7 +11,7 @@ const AllTicket = ({ticket, tasks, handleTask}) => {
                         <h2 className="card-title justify-baseline text-lg"> {ticket.title} </h2>
                         {
                             t ? 
-                                <div className="badge font-bold text-[#9C7700] bg-[#F8F3B9] px-2 py-4"><i className="fa-solid fa-circle text-[#FEBB0C]" ></i> in -progress
+                                <div className="badge font-bold text-[#9C7700] bg-[#F8F3B9] px-2 py-6"><i className="fa-solid fa-circle text-[#FEBB0C]" ></i> in -progress
                                 </div>
                                 : <div className="badge font-bold text-[#0B5E06] rounded-2xl bg-[#B9F8CF] px-2 py-4"><i className="fa-solid fa-circle text-[#02A53B]" ></i>  {ticket.status}
                             </div>
