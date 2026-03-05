@@ -33,7 +33,7 @@ This project is a React-based **Customer Support Zone** designed to display cust
 Create a README file to answer the following question-
 
 ###  What is JSX, and why is it used?
-    === jsx (JavaScript xml). amon ak doroner syntex jekhane JavaScript ar moddei HTML likha jay. ata UI design korte bebohar hoy.
+ - jsx (JavaScript xml). amon ak doroner syntex jekhane JavaScript ar moddei HTML likha jay. ata UI design korte bebohar hoy.
 
 ###  What is the difference between State and Props?
     === state holo component ar nijer vitorer data ja poyojone poriborton hoy.
