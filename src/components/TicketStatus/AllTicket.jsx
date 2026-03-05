@@ -1,14 +1,23 @@
 
-const AllTicket = ({ticket, handleTask}) => {
+const AllTicket = ({ticket, tasks, handleTask}) => {
     // console.log(ticket)
+    const t = tasks.find(t => t.id == ticket.id)
+    // console.log(t)
     return (
         <>
             <div onClick={() => handleTask(ticket)}  className="card bg-base-100">
                 <div className="card-body">
                     <div className='flex justify-between'>
                         <h2 className="card-title justify-baseline text-lg"> {ticket.title} </h2>
-                        <div className="badge font-bold text-[#0B5E06] rounded-2xl bg-[#B9F8CF] px-2 py-4"><i className="fa-solid fa-circle text-[#02A53B]" ></i> Open
-                        </div>
+                        {
+                            t ? 
+                                <div className="badge font-bold text-[#9C7700] bg-[#F8F3B9] px-2 py-4"><i className="fa-solid fa-circle text-[#FEBB0C]" ></i> in -progress
+                                </div>
+                                : <div className="badge font-bold text-[#0B5E06] rounded-2xl bg-[#B9F8CF] px-2 py-4"><i className="fa-solid fa-circle text-[#02A53B]" ></i>  {ticket.status}
+                            </div>
+                        }
+                        
+                        
                     </div>
                     <p className='text-[#627382] py-1'>{ticket.description}</p>
                     <div className="card-actions justify-between text-[#627382] items-center">

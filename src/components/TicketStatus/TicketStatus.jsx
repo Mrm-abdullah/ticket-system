@@ -10,12 +10,18 @@ const TicketStatus = ({ticketPromise, setInProgress, inProgress, resolved, setRe
 
     const [tasks, setTasks] = useState([])
     const handleTask = (ticket) => {
-        // console.log(ticket)
-        setTasks([...tasks, ticket])
-        const newInProgress = inProgress + 1
-        setInProgress(newInProgress)
-        toast("Task added")
+        // console.log(ticket.id)
+        const t = tasks.find(t => t.id == ticket.id)
+        if (t) {
+            toast("Task Already added")
+        } else {
+            setTasks([...tasks, ticket])
+            const newInProgress = inProgress + 1
+            setInProgress(newInProgress)
+            toast("Task added")
+        }
     }
+
     const [resolvedTask, setResolvedTask] = useState([])
     const handleResolvedTask = (reTask) => {
         const newResolved = resolved + 1
@@ -42,7 +48,7 @@ const TicketStatus = ({ticketPromise, setInProgress, inProgress, resolved, setRe
                 <h3 className='text-xl font-bold'>Customer Tickets</h3>
                 <div className='py-4 grid grid-cols-1 lg:grid-cols-2 gap-4'>
                     {
-                        ticketData.map((ticket) => <AllTicket handleTask={handleTask} ticket={ticket} key={ticket.id}></AllTicket>)
+                        ticketData.map((ticket) => <AllTicket handleTask={handleTask} ticket={ticket} tasks={tasks} key={ticket.id}></AllTicket>)
                     }
                 </div>
             </div>
