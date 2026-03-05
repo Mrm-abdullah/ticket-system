@@ -5,39 +5,24 @@
 This project is a React-based **Customer Support Zone** designed to display customer tickets, track progress, and mark them as resolved. It follows a Figma design and includes additional features like status management, responsiveness, and toast notifications using **React-Toastify**.
 
 ## 📌 Features & Requirements 
-
+---
 ### ✅ Navbar 
     ====done
 
 ### ✅ Banner
-
-* Banner section designed according to Figma.  ====done
-* Shows a **linear gradient** background.  ====done
-* Displays ticket statistics:
-
-  * **In Progress Count**   
-  * **Resolved Count** (default = 0).
+    ====done
 
 ### ✅ Main Section
 
-1. **JSON Data**  ==== done
+1. **JSON Data** 
+    ==== done
 
 2. **Ticket Cards**
     ==== done
 
 3. **Task Status Section**
-
-   * Clicking a card adds it to the **Task Status Section** (right side) and shows alert. It will increase the count of in-progress in banner
-   * Task Status shows:
-
-     * Ticket Title
-     * **Complete Button**
-   * Clicking **Complete Button**:
-
-     * show alert
+    ==== done
      
-
-
 ### ✅ Footer
     ==== done
 
@@ -55,23 +40,20 @@ Create a README file to answer the following question-
 
 ---
 
-### 
-
 ## 📌 Challenge Requirements 
 
-### 🔔 React-Toastify 
-
-* Used **React-Toastify** to replace all alerts with stylish toast notifications.
+### 🔔 React-Toastify
+    ==== done
 
 ### 📝 Task Completion Logic 
 
 Clicking **Complete Button**:
 
-1. It is **removed from Task Status**. 
-2. It is added to the **Resolved List**. 
-3. The **In Progress count decreases**. 
-4. The **Resolved count increases**. 
-5. It is removed from the **Customer Tickets list**. 
+1. It is **removed from Task Status**.    ==== done
+2. It is added to the **Resolved List**.      ==== done
+3. The **In Progress count decreases**.       ==== done
+4. The **Resolved count increases**.      ==== done
+5. It is removed from the **Customer Tickets list**.      ==== done
 
 
 
@@ -90,10 +72,4 @@ Clicking **Complete Button**:
 ### 📅 Deadline For 60 marks: 5th March, 2026 (11:59 pm ⏱️)
 
 ### 📅 Deadline For 50 marks: 6th March, 2026 (11:59 pm ⏱️)
-
-### 📅 Deadline For 30 marks: Until the next assignment is published.
-
-
----
-
 

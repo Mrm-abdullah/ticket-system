@@ -32,7 +32,7 @@ const TicketStatus = ({ticketPromise, setInProgress, inProgress, resolved, setRe
 
         const newTicketData = ticketData.filter(ticketData => ticketData.id != reTask.id)
         setTicketData(newTicketData)
-        toast("Item Resolved")        
+        toast("Task Complete ")        
 
     }
     // console.log(tasks)
