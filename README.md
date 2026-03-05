@@ -5,7 +5,7 @@
 This project is a React-based **Customer Support Zone** designed to display customer tickets, track progress, and mark them as resolved. It follows a Figma design and includes additional features like status management, responsiveness, and toast notifications using **React-Toastify**.
 
 ## 📌 Features & Requirements 
----
+
 ### ✅ Navbar 
     ====done
 
@@ -33,12 +33,25 @@ This project is a React-based **Customer Support Zone** designed to display cust
 Create a README file to answer the following question-
 
  - What is JSX, and why is it used?
- - What is the difference between State and Props?
- - What is the useState hook, and how does it work?
- - How can you share state between components in React?
- - How is event handling done in React?
+    ==> jsx (JavaScript xml). amon ak doroner syntex jekhane JavaScript ar moddei HTML likha jay. ata UI design korte bebohar hoy.
 
----
+ - What is the difference between State and Props?
+    ==> state holo component ar nijer vitorer data ja poyojone poriborton hoy.
+    ==> parent component theke child component a j data pathano hoy setai Props. child theke props poriborton kora jay na.
+
+ - What is the useState hook, and how does it work?
+    ==> useState holo react ar amon akta hook, ja diye functional component ar data toiri o niyontron kora jay. 
+    ==> useState bebohar korle amra akta variable pai jetate data rakhi and ui e dekhate pari, and akta function pai ja diye data gulo poriboton korte pari. atar akta default value dite hoy. noyto undefined dibe.
+
+ - How can you share state between components in React?
+    ==> lifting state up --- parent component a state rekhe, akadik child component k props akare data pathano.
+    ==> context api --- main component a connect kore dile. sokol child component theke sorasori access kora jay. props kora lage na.
+    ==> state management library bebohar koreo kora jay.
+
+ - How is event handling done in React?
+    ==> react a event (jemon onClick) handle korar jonno akti function bebohar kora hoy. orthat event handling mane holo user ar kaj(onClick) dorar jonno event ar sathe function bebohar kora.
+
+
 
 ## 📌 Challenge Requirements 
 
